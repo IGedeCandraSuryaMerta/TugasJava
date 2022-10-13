@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nama="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="form">
+        <td>
+            <form action="" id="input" onsubmit="event.preventDefault();formSubmit();" autocomplete="off">
+                <div class="nim">
+                    <label for="">NIM : </label>
+                    <input type="number" nama="nim" id="nim">
+                </div>
+                <div class="nama">
+                    <label for="">Nama : </label>
+                    <input type="text" nama="nama" id="nama">
+                </div>
+                <div class="buttom">
+                    <input type="submit" value="Simpan">
+                </div>
+            </form>
+        </td>
+        <table class="data" id="tabledata">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>NIM</th>
+                    <th>Nama</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
